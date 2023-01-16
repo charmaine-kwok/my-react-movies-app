@@ -1,0 +1,17 @@
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  display: flex;
+  font-family: "Sen", sans-serif;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.navbar li {
+  display: inline;
+}

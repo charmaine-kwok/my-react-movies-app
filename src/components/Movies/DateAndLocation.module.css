@@ -1,0 +1,10 @@
+.movie-location-date-container {
+  font-weight: 300;
+  font-size: 12px;
+  bottom: 5%;
+  right: 10px;
+  font-family: "Charm", cursive;
+  text-align: right;
+  width: 25%;
+  position: absolute;
+}
