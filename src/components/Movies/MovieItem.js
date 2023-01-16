@@ -1,5 +1,6 @@
 import styles from "./MovieItem.module.css";
 import DateAndLocation from "./DateAndLocation";
+import Rating from "./Rating";
 
 const MoviesItem = (props) => {
   return (
@@ -10,6 +11,7 @@ const MoviesItem = (props) => {
         <p className={styles["movie-desc"]}>{props.desc}</p>
       </div>
       <DateAndLocation location={props.location} date={props.date} />
+      <Rating rating={props.rating} />
     </div>
   );
 };

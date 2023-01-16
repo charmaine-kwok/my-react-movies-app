@@ -1,0 +1,23 @@
+.movie-rating-container {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 65px;
+  height: 65px;
+}
+
+.movie-rating-icon-container {
+  position: relative;
+}
+
+.movie-rating-star {
+  font-size: 60px;
+  position: absolute;
+}
+
+.movie-rating-rate {
+  top: 25px;
+  left: 21px;
+  position: absolute;
+  font-size: 120%;
+}
