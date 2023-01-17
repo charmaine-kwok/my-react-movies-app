@@ -3,9 +3,11 @@
   height: 50px;
   background-color: black;
   position: sticky;
+  z-index: 5050;
   top: 0;
   display: flex;
   font-family: "Sen", sans-serif;
+  overflow: hidden;
 }
 
 ul {

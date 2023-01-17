@@ -7,10 +7,10 @@ const star = <FontAwesomeIcon icon={faStar} color="green" />;
 
 const Rating = (props) => {
   return (
-    <div class={styles["movie-rating-container"]}>
-      <div class={styles["movie-rating-icon-container"]}>
+    <div className={styles["movie-rating-container"]}>
+      <div className={styles["movie-rating-icon-container"]}>
         <div className={styles["movie-rating-star"]}>{star}</div>
-        <span class={styles["movie-rating-rate"]}>{props.rating}</span>
+        <span className={styles["movie-rating-rate"]}>{props.rating}</span>
       </div>
     </div>
   );

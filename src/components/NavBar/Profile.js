@@ -7,7 +7,7 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 const moon = <FontAwesomeIcon icon={faMoon} color="gold" />;
 const sun = <FontAwesomeIcon icon={faSun} color="gold" />;
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className={styles["profile-container"]}>
       <img className={styles["profile-picture"]} src={ball} alt="" />
@@ -18,7 +18,10 @@ const Profile = () => {
       <div className={styles.toggle}>
         <div>{moon}</div>
         <div>{sun}</div>
-        <div className={styles["toggle-ball"]}></div>
+        <div
+          className={styles["toggle-ball"]}
+          onClick={props.onChangeTheme}
+        ></div>
       </div>
     </div>
   );
