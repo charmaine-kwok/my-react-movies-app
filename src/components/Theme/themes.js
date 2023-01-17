@@ -1,6 +1,4 @@
-import React from 'react';
-
-export const themes = {
+const themes = {
   light: {
     'background-color': 'lightblue',
     color: 'black',
@@ -11,6 +9,4 @@ export const themes = {
   },
 };
 
-export const ThemeContext = React.createContext(
-  themes.dark // default value
-);
+export default themes;

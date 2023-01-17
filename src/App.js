@@ -1,40 +1,33 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import Navbar from './components/NavBar/NavBar';
+import Movies from './components/Movies/Movies';
+import themes from './components/Theme/themes';
 
-import Navbar from "./components/NavBar/NavBar";
-import Movies from "./components/Movies/Movies";
+import './App.css';
 
-import "./App.css";
+const StyledApp = styled.div`
+  color: ${(props) => props.theme.color};
+  background-color: ${(props) => props.theme['background-color']};
+`;
 
 const App = () => {
-  // const [themeState, setThemeState] = useState(
-  //   document.body.style.backgroundColor
-  // );
+  const [themeState, setThemeState] = useState('dark');
 
-  const setDarkTheme = () => {
-    // setThemeState("rgb(36, 36, 36)");
-    console.log("To dark theme!");
-    console.log(document.body.style.backgroundColor);
-    document.body.style.backgroundColor = "rgb(36, 36, 36)";
-  };
-
-  const setLightTheme = () => {
-    console.log("To light theme!");
-    console.log(document.body.style.backgroundColor);
-    document.body.style.backgroundColor = "rgb(255, 255, 255)";
-    // setThemeState("#FFF");
+  const themeToggle = () => {
+    console.log('Change Theme!!!');
+    console.log(themeState);
+    console.log(themes.light);
+    themeState === 'dark' ? setThemeState('light') : setThemeState('dark');
   };
 
   return (
-    <Fragment>
-      <Navbar
-        onChangeTheme={
-          (document.body.style.backgroundColor = "rgb(36, 36, 36)"
-            ? setLightTheme
-            : setDarkTheme)
-        }
-      />
-      <Movies />
-    </Fragment>
+    <ThemeProvider theme={themeState === 'light' ? themes.light : themes.dark}>
+      <Navbar onChangeTheme={themeToggle} />
+      <StyledApp>
+        <Movies />
+      </StyledApp>
+    </ThemeProvider>
   );
 };
 
