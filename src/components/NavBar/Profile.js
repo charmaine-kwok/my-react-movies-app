@@ -1,5 +1,6 @@
 import styles from './Profile.module.css';
 import ball from './ball.png';
+// import ThemeToggle from '../Functions/ThemeToggle';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +16,7 @@ const Profile = (props) => {
         <span className={styles['profile-text']}>Profile</span>
         <i className={styles['fa-solid fa-caret-down']}></i>
       </div>
-      <div className={styles.toggle}>
+      <div className={styles['toggle']}>
         <div>{moon}</div>
         <div>{sun}</div>
         <div

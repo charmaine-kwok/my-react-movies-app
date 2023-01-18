@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import Navbar from './components/NavBar/NavBar';
 import Movies from './components/Movies/Movies';
@@ -11,23 +11,36 @@ const StyledApp = styled.div`
   background-color: ${(props) => props.theme['background-color']};
 `;
 
+// const StyledNavbar = styled.div`
+//   color: ${(props) => props.theme.color};
+//   background-color: ${(props) => props.theme['background-color']};
+// `;
+
 const App = () => {
   const [themeState, setThemeState] = useState('dark');
 
   const themeToggle = () => {
     console.log('Change Theme!!!');
-    console.log(themeState);
-    console.log(themes.light);
     themeState === 'dark' ? setThemeState('light') : setThemeState('dark');
   };
 
   return (
-    <ThemeProvider theme={themeState === 'light' ? themes.light : themes.dark}>
-      <Navbar onChangeTheme={themeToggle} />
-      <StyledApp>
-        <Movies />
-      </StyledApp>
-    </ThemeProvider>
+    <Fragment>
+      <ThemeProvider
+        theme={themeState === 'light' ? themes.dark : themes.light}
+      >
+        <StyledApp>
+          <Navbar onChangeTheme={themeToggle} />
+        </StyledApp>
+      </ThemeProvider>
+      <ThemeProvider
+        theme={themeState === 'light' ? themes.light : themes.dark}
+      >
+        <StyledApp>
+          <Movies />
+        </StyledApp>
+      </ThemeProvider>
+    </Fragment>
   );
 };
 

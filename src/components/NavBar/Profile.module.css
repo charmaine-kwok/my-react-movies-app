@@ -41,3 +41,12 @@
   cursor: pointer;
   transition: 1s ease all;
 }
+
+.toggle.active {
+  background-color: black;
+}
+
+.toggle-ball.active {
+  background-color: #fff;
+  transform: translateX(-20px);
+}

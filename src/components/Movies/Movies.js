@@ -14,6 +14,10 @@ import quoVadisAida from './img/yan/quo-vadis-aida.jpeg';
 import elvis from './img/yan/elvis.jpeg';
 import broker from './img/yan/broker.jpeg';
 import tableForSix from './img/yan/table-for-six.jpeg';
+import theSparringPartner from './img/yan/the_sparring_partner.jpeg';
+import carol from './img/yan/carol.jpeg';
+import theNarrowRoad from './img/yan/the_narrow_road.jpeg';
+import toMyNineteenYearOldSelf from './img/yan/to-my-nineteen-year-old-self.jpeg';
 
 import MoviesItem from './MovieItem';
 
@@ -143,6 +147,40 @@ const Movies = () => {
         location="Paris London New York Milano"
         date="24-Sep-2022"
         rating="8.5"
+      />
+      <MoviesItem
+        pic={theSparringPartner}
+        title="正義迴廊"
+        desc="Nice movie."
+        location="Paris London New York Milano"
+        date="12-Nov-2022"
+        rating="8.0"
+      />
+      <MoviesItem
+        pic={carol}
+        title="Carol"
+        desc="Who doesn't love Carol?
+        對觀眾感到很失望。。。"
+        location="古天樂電影院"
+        date="25-Dec-2022"
+        rating="8.5"
+      />
+      <MoviesItem
+        pic={theNarrowRoad}
+        title="窄路微塵"
+        desc="Nice movie.
+        A nice movie to end 2022."
+        location="Cinematheque"
+        date="27-Dec-2022"
+        rating="9.0"
+      />
+      <MoviesItem
+        pic={toMyNineteenYearOldSelf}
+        title="給十九歲的我"
+        desc="Nice documentary."
+        location="M+ Cinema<"
+        date="07-Jan-2023"
+        rating="9.0"
       />
     </div>
   );

@@ -1,6 +1,6 @@
 const themes = {
   light: {
-    'background-color': 'lightblue',
+    'background-color': 'lightgrey',
     color: 'black',
   },
   dark: {
