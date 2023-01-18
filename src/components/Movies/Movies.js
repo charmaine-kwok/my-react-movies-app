@@ -1,23 +1,6 @@
 import styles from './Movies.module.css';
-import soul from './img/yan/soul.jpeg';
-import anotherRound from './img/yan/another-round.jpeg';
-import theresNoEvil from './img/yan/there-is-no-evil.jpeg';
-import time from './img/yan/time.jpeg';
-import firstGirlILoved from './img/yan/first-girl-i-loved.jpeg';
-import handRolledCigaratte from './img/yan/hand-rolled-cigaratte.JPG';
-import theFrenchDispatch from './img/yan/french-dispatch.jpeg';
-import yueLao from './img/yan/yue-lao.jpeg';
-import driveMyCar from './img/yan/drive-my-car.jpeg';
-import flee from './img/yan/flee.jpeg';
-import everythingEverywhereAllAtOnce from './img/yan/everything-everywhere-all-at-once.jpeg';
-import quoVadisAida from './img/yan/quo-vadis-aida.jpeg';
-import elvis from './img/yan/elvis.jpeg';
-import broker from './img/yan/broker.jpeg';
-import tableForSix from './img/yan/table-for-six.jpeg';
-import theSparringPartner from './img/yan/the_sparring_partner.jpeg';
-import carol from './img/yan/carol.jpeg';
-import theNarrowRoad from './img/yan/the_narrow_road.jpeg';
-import toMyNineteenYearOldSelf from './img/yan/to-my-nineteen-year-old-self.jpeg';
+
+import images from '../../assets/images';
 
 import MoviesItem from './MovieItem';
 
@@ -25,7 +8,7 @@ const Movies = () => {
   return (
     <div className={styles.movies}>
       <MoviesItem
-        pic={soul}
+        pic={images.soul}
         title="Soul"
         desc="First time watching movie with Yan!!!"
         location="Festical Walk"
@@ -33,7 +16,7 @@ const Movies = () => {
         rating="7.5"
       />
       <MoviesItem
-        pic={anotherRound}
+        pic={images.anotherRound}
         title="Another Round"
         desc="Movie is ok."
         location="Telford"
@@ -41,7 +24,7 @@ const Movies = () => {
         rating="7.5"
       />
       <MoviesItem
-        pic={theresNoEvil}
+        pic={images.theresNoEvil}
         title="There is no evil"
         desc="Fell asleep during the movie…"
         location="Cinematheque"
@@ -49,7 +32,7 @@ const Movies = () => {
         rating="7.5"
       />
       <MoviesItem
-        pic={time}
+        pic={images.time}
         title="殺出個黃昏"
         desc="Fun movie! I like it!"
         location="The One"
@@ -57,7 +40,7 @@ const Movies = () => {
         rating="8.5"
       />
       <MoviesItem
-        pic={firstGirlILoved}
+        pic={images.firstGirlILoved}
         title="喜歡你是你"
         desc="Wtf did I watch?!"
         location="D2 Place"
@@ -65,7 +48,7 @@ const Movies = () => {
         rating="6.0"
       />
       <MoviesItem
-        pic={handRolledCigaratte}
+        pic={images.handRolledCigaratte}
         title="手捲煙"
         desc="Okay movie."
         location="D2 Place(?)"
@@ -73,7 +56,7 @@ const Movies = () => {
         rating="7.5"
       />
       <MoviesItem
-        pic={theFrenchDispatch}
+        pic={images.theFrenchDispatch}
         title="The French Dispatch"
         desc="The cinematography is nice."
         location="The One"
@@ -81,7 +64,7 @@ const Movies = () => {
         rating="7.5"
       />
       <MoviesItem
-        pic={yueLao}
+        pic={images.yueLao}
         title="月老"
         desc={`
         Okay movie. Some part a bit kam.
@@ -91,7 +74,7 @@ const Movies = () => {
         rating="7.5"
       />
       <MoviesItem
-        pic={driveMyCar}
+        pic={images.driveMyCar}
         title="Drive My Car"
         desc="Longggggg"
         location="Cinematheque"
@@ -99,7 +82,7 @@ const Movies = () => {
         rating="7.0"
       />
       <MoviesItem
-        pic={flee}
+        pic={images.flee}
         title="Flee"
         desc="Movie is good."
         location="Cinematheque"
@@ -107,7 +90,7 @@ const Movies = () => {
         rating="8.0"
       />
       <MoviesItem
-        pic={everythingEverywhereAllAtOnce}
+        pic={images.everythingEverywhereAllAtOnce}
         title="Everything Everywhere All at Once"
         desc="Well…. Interesting"
         location="D Park"
@@ -115,7 +98,7 @@ const Movies = () => {
         rating="7.5"
       />
       <MoviesItem
-        pic={quoVadisAida}
+        pic={images.quoVadisAida}
         title="Quo Vadis, Aida?"
         desc="Okay movie."
         location="K11 ART HOUSE"
@@ -123,7 +106,7 @@ const Movies = () => {
         rating="7.5"
       />
       <MoviesItem
-        pic={elvis}
+        pic={images.elvis}
         title="Elvis"
         desc="I like Elvis!
         剩係聽歌都正！"
@@ -132,7 +115,7 @@ const Movies = () => {
         rating="8.0"
       />
       <MoviesItem
-        pic={broker}
+        pic={images.broker}
         title="孩子轉運站"
         desc="Okay movie.
         Fell asleep again…"
@@ -141,7 +124,7 @@ const Movies = () => {
         rating="7.5"
       />
       <MoviesItem
-        pic={tableForSix}
+        pic={images.tableForSix}
         title="飯戲攻心"
         desc="Funny movie."
         location="Paris London New York Milano"
@@ -149,7 +132,7 @@ const Movies = () => {
         rating="8.5"
       />
       <MoviesItem
-        pic={theSparringPartner}
+        pic={images.theSparringPartner}
         title="正義迴廊"
         desc="Nice movie."
         location="Paris London New York Milano"
@@ -157,7 +140,7 @@ const Movies = () => {
         rating="8.0"
       />
       <MoviesItem
-        pic={carol}
+        pic={images.carol}
         title="Carol"
         desc="Who doesn't love Carol?
         對觀眾感到很失望。。。"
@@ -166,7 +149,7 @@ const Movies = () => {
         rating="8.5"
       />
       <MoviesItem
-        pic={theNarrowRoad}
+        pic={images.theNarrowRoad}
         title="窄路微塵"
         desc="Nice movie.
         A nice movie to end 2022."
@@ -175,7 +158,7 @@ const Movies = () => {
         rating="9.0"
       />
       <MoviesItem
-        pic={toMyNineteenYearOldSelf}
+        pic={images.toMyNineteenYearOldSelf}
         title="給十九歲的我"
         desc="Nice documentary."
         location="M+ Cinema<"
